@@ -1,0 +1,19 @@
+{{template "base" .}}
+
+{{define "head_tag"}}
+    <title>Home page</title>
+{{end}}
+
+{{define "content"}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>This is the Home page</h1>
+                <p>Welcome to the home page</p>
+                <p>Here is another data: {{index .StringMap "text"}}</p>
+            </div>
+        </div>
+    </div>
+
+{{end}}
